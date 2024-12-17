@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">Create a New Bank Account</h1>
+        <form method="post">
+            Name: <input type="text" name="name" required><br>
+            Adhaar number: <input type="number" name="number" required><br>
+            address proof: <input type="number" name="ration card/passport"><br>
+            mobile number: <input type="number" name="mobile number"><br>
+            all zerox copies: <input type="file" name="documents"><br>
+            <input type="submit" value="Create Account">
+        </form>
+        <a href="http://127.0.0.1:5500/templates/home.html">Back to Home</a>
+    </div>
+</body>
+</html>

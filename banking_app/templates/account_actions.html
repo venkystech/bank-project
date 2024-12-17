@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title align="center">Account Actions</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ client.account['name'] }}!</h1>
+        <p>Your current balance is: {{ client.account['holdings'] }}</p>
+        <form method="post">
+            Action: 
+            <select name="action">
+                <option value="withdraw">Withdraw</option>
+                <option value="deposit">Deposit</option>
+            </select><br>
+            Amount: <input type="number" name="amount" required><br>
+            <input type="submit" value="Submit">
+        </form>
+        <a href="http://127.0.0.1:5500/templates/home.html">Back to Home</a>
+    </div>
+</body>
+</html>

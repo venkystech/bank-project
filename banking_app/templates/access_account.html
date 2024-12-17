@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Access Account</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Access Your Bank Account</h1>
+        <form method="post">
+            Name: <input type="text" name="name" required><br>
+            Account Number: <input type="number" name="account_number" required><br>
+            <input type="submit" value="Access Account">
+        </form>
+        <a href="http://127.0.0.1:5500/templates/home.html">Back to Home</a>
+    </div>
+</body>
+</html>
